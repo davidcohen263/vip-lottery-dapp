@@ -1,10 +1,10 @@
-import React from "react";
+import Layout from "../components/Layout";
 
 const AdminPanel = () => (
-  <div className="text-white p-8">
-    <h1 className="text-3xl font-bold mb-4">🛠️ דשבורד אדמין</h1>
-    <p>כאן תוכל לנהל הגרלות, לראות סטטיסטיקות ולשלוח פרסים</p>
-  </div>
+  <Layout>
+    <h2 className="text-2xl font-bold mb-4">🛠️ דשבורד ניהול</h2>
+    <p className="text-gray-400">ניהול הגרלות, פרסים, משתמשים</p>
+  </Layout>
 );
 
 export default AdminPanel;
