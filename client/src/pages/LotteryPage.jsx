@@ -1,14 +1,14 @@
-import React from "react";
 import { useParams } from "react-router-dom";
+import Layout from "../components/Layout";
 
 const LotteryPage = () => {
   const { id } = useParams();
 
   return (
-    <div className="text-white p-8">
-      <h1 className="text-3xl font-bold mb-4">🎟️ פרטי הגרלה #{id}</h1>
-      <p>כאן יופיעו פרטים על ההגרלה, תמונה, כפתור קנייה ועוד</p>
-    </div>
+    <Layout>
+      <h2 className="text-2xl font-bold mb-4">🎟️ פרטי הגרלה #{id}</h2>
+      <p className="text-gray-400">פרטי ההגרלה יופיעו כאן.</p>
+    </Layout>
   );
 };
 
