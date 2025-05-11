@@ -1,10 +1,10 @@
-import React from "react";
+import Layout from "../components/Layout";
 
 const UserDashboard = () => (
-  <div className="text-white p-8">
-    <h1 className="text-3xl font-bold mb-4">📊 הדשבורד שלי</h1>
-    <p>כאן תראה את כל הכרטיסים שרכשת</p>
-  </div>
+  <Layout>
+    <h2 className="text-2xl font-bold mb-4">📊 הדשבורד שלי</h2>
+    <p className="text-gray-400">כאן תראה את כל הכרטיסים שרכשת</p>
+  </Layout>
 );
 
 export default UserDashboard;
